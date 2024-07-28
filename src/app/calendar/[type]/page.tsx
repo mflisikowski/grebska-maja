@@ -23,7 +23,7 @@ export default async function CalendarPage({
     response.data.find((item: CalendarData) => item.id === params.type)
 
   return (
-    <div id={`calendar-${id}`} className="lg:space-y-36">
+    <div id={`calendar-${id}`} className="space-y-16 lg:space-y-36">
       <FadeIn>
         <Container>
           <div className="mx-auto max-w-2xl text-center">
@@ -48,7 +48,7 @@ export default async function CalendarPage({
                 return (
                   <div
                     className={`flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:px-10 ${
-                      isEven ? 'text-right' : 'text-left'
+                      isEven ? 'lg:text-right' : 'lg:text-left'
                     }`}
                     key={data.id}
                   >
@@ -69,10 +69,10 @@ export default async function CalendarPage({
 
                       <div
                         className={`flex items-center gap-x-6 ${
-                          isEven ? 'justify-end' : 'justify-start'
+                          isEven ? 'lg:justify-end' : 'lg:justify-start'
                         }`}
                       >
-                        <div className="text-base">
+                        <div className="mx-auto text-base lg:mx-0">
                           <CalendarLink
                             isCurrentPath={isCurrentPath}
                             index={index}
