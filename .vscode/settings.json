@@ -1,0 +1,7 @@
+{
+    "editor.fontFamily": "Fira Code, monospace",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 3000,
+    "editor.fontLigatures": true,
+    "editor.formatOnSave": true,
+}
