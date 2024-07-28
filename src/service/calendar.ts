@@ -1,5 +1,6 @@
 export async function fetchCalendarData() {
-  const url = process.env.VERCEL_URL || 'http://localhost:3000'
+  const url =
+    process.env.VERCEL_PROJECT_PRODUCTION_URL || 'http://localhost:3000'
   const response = await fetch(`${url}/api/data/calendar/`)
 
   if (!response) {
