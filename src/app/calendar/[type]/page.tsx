@@ -1,8 +1,4 @@
-import {
-  CalendarData,
-  CalendarType,
-  validTypes,
-} from '@/app/api/data/calendar/route'
+import { CalendarData, CalendarType, validTypes } from '@/app/types'
 import CalcomEmbed from '@/components/calcom-embed'
 import CalendarDetails from '@/components/calendar/calendar-details'
 import CalendarHeader from '@/components/calendar/calendar-header'

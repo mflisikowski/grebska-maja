@@ -1,6 +1,6 @@
 'use client'
 
-import { CalendarType } from '@/app/api/data/calendar/route'
+import { CalendarType } from '@/app/types'
 import { Container } from '@/components/container'
 import Cal, { getCalApi } from '@calcom/embed-react'
 import { useEffect } from 'react'

@@ -1,4 +1,4 @@
-import { CalendarData } from '@/app/api/data/calendar/route'
+import { CalendarData } from '@/app/types'
 import { Container } from '@/components/container'
 import { CheckIcon } from '@heroicons/react/24/outline'
 

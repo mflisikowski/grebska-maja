@@ -1,8 +1,6 @@
-import { CalendarData, CalendarType } from './app/api/data/calendar/route'
-import { OfferDataType } from './app/api/data/offer/route'
-
 import { type ClassValue, clsx } from 'clsx'
 import { twMerge } from 'tailwind-merge'
+import { CalendarData, CalendarType } from './app/types'
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))

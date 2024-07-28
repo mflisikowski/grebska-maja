@@ -1,26 +1,12 @@
-export interface CalendarData {
-  name: string
-  duration: string
-  price: string
-  id: string
-  href: string
-  description: string
-  features: string[]
-}
-
-export enum CalendarType {
-  PsychologicalConsultation = 'psychological-consultation',
-  IndividualPsychotherapy = 'individual-psychotherapy',
-}
-
-export const validTypes: CalendarType[] = Object.values(CalendarType)
+import { CalendarData } from '@/app/types'
 
 /**
  * Retrieves calendar data including psychological consultation and individual psychotherapy.
  *
- * @return {Promise<Response>} The response containing the calendar data.
+ * @param {Request} req - The request object.
+ * @return {Promise<Response>} A promise that resolves to a response containing the calendar data in JSON format.
  */
-export async function GET(): Promise<Response> {
+export async function GET(req: Request): Promise<Response> {
   try {
     const data: CalendarData[] = [
       {
@@ -53,7 +39,9 @@ export async function GET(): Promise<Response> {
       },
     ]
 
-    return new Response(JSON.stringify({ data }))
+    return new Response(JSON.stringify({ data }), {
+      headers: { 'Content-Type': 'application/json' },
+    })
   } catch (error) {
     console.error(error)
     return new Response('Internal Server Error', { status: 500 })

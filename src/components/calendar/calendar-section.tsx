@@ -1,6 +1,5 @@
 'use client'
 
-import { CalendarData } from '@/app/api/data/calendar/route'
 import { cn, getCalendarData } from '@/utils'
 import { Container } from '../container'
 import { useEffect, useState } from 'react'
@@ -12,6 +11,7 @@ import {
 } from '@heroicons/react/24/outline'
 import { buttonVariants } from '../ui/button'
 import Link from 'next/link'
+import { CalendarData } from '@/app/types'
 
 export default function CalendarSection({
   showHeadline = true,
