@@ -41,8 +41,7 @@ export const ContactForm = () => {
     const formattedDateString = createFormattedDateString(date)
     console.log(formattedDateString)
 
-    const url = `${process.env.NEXT_PUBLIC_API_URL}/api/send`
-    await fetch(url, {
+    await fetch(`/api/send`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -27,8 +27,7 @@ export const getSearchParams = (
 export async function getCalendarData(
   type?: CalendarType,
 ): Promise<CalendarData | CalendarData[]> {
-  const url = `${process.env.NEXT_PUBLIC_API_URL}/api/data/calendar`
-  const response = await fetch(url)
+  const response = await fetch(`/api/data/calendar`)
   const result = (await response.json()) as { data: CalendarData[] }
 
   if (type) {
