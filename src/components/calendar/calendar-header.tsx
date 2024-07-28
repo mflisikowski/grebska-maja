@@ -1,7 +1,6 @@
 import { Container } from '@/components/container'
 import FadeIn from '../client/fade-in'
-import { Button } from '../ui/button'
-import { CalendarData } from '@/app/types'
+import { CalendarData } from '@/types'
 
 export default function CalendarHeader({ data }: { data: CalendarData }) {
   return (

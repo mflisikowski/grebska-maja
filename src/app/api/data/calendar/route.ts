@@ -1,4 +1,4 @@
-import { CalendarData } from '@/app/types'
+import { CalendarData } from '@/types'
 
 /**
  * Retrieves calendar data including psychological consultation and individual psychotherapy.

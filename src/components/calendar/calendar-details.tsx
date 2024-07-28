@@ -1,5 +1,5 @@
-import { CalendarData } from '@/app/types'
 import { Container } from '@/components/container'
+import { CalendarData } from '@/types'
 import { CheckIcon } from '@heroicons/react/24/outline'
 
 export default function CalendarDetails({ data }: { data: CalendarData }) {
