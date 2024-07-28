@@ -1,7 +1,7 @@
+import { API_URL } from '@/constants'
+
 export async function fetchCalendarData() {
-  const url =
-    process.env.VERCEL_PROJECT_PRODUCTION_URL || 'http://localhost:3000'
-  const response = await fetch(`${url}/api/data/calendar/`)
+  const response = await fetch(`https://${API_URL}/api/data/calendar/`)
 
   if (!response) {
     throw new Error('Failed to fetch response')
