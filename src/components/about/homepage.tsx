@@ -83,6 +83,7 @@ export default function HeroSection() {
                 src="/image.png"
                 width={600}
                 height={400}
+                priority
                 alt=""
               />
 
