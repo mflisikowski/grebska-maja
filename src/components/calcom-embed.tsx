@@ -1,7 +1,6 @@
 'use client'
 
 import { Container } from '@/components/container'
-import { calendarValidTypes } from '@/types'
 import Cal, { getCalApi } from '@calcom/embed-react'
 import { useEffect } from 'react'
 
