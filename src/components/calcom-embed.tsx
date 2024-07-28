@@ -1,11 +1,15 @@
 'use client'
 
-import { CalendarType } from '@/app/types'
 import { Container } from '@/components/container'
+import { calendarValidTypes } from '@/types'
 import Cal, { getCalApi } from '@calcom/embed-react'
 import { useEffect } from 'react'
 
-export default function CalcomEmbed({ type }: { type: CalendarType }) {
+export interface CalcomEmbedProps {
+  type: string
+}
+
+export default function CalcomEmbed({ type }: CalcomEmbedProps) {
   useEffect(() => {
     ;(async function () {
       const cal = await getCalApi({})
