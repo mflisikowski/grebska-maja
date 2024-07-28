@@ -1,29 +1,19 @@
-import { CalendarData } from '@/app/types'
 import CalcomEmbed from '@/components/calcom-embed'
 import { CalendarLink } from '@/components/calendar/calendar-link'
 import FadeIn from '@/components/client/fade-in'
 import { Container } from '@/components/container'
-import { calendarValidTypes } from '@/types'
+import { fetchCalendarData } from '@/service/calendar'
+import { CalendarData, calendarValidTypes } from '@/types'
 import { cn } from '@/utils'
 import { CheckIcon } from '@heroicons/react/24/outline'
 import { notFound } from 'next/navigation'
-
-async function getData() {
-  const res = await fetch(`https://www.majagrebska.pl/api/data/calendar/`)
-
-  if (!res.ok) {
-    throw new Error('Failed to fetch calendar data')
-  }
-
-  return res.json()
-}
 
 export default async function CalendarPage({
   params,
 }: {
   params: { type: string }
 }) {
-  const response = await getData()
+  const response = await fetchCalendarData()
 
   if (!calendarValidTypes.includes(params.type) || !response.data) {
     return notFound()

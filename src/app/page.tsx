@@ -1,9 +1,9 @@
 import AboutHero from '@/components/about/homepage'
 import FadeIn from '@/components/client/fade-in'
 import { Container } from '@/components/container'
-import { CalendarDaysIcon, EnvelopeIcon } from '@heroicons/react/24/outline'
+import { CalendarDaysIcon } from '@heroicons/react/24/outline'
 import { type Metadata } from 'next'
-import CalendarSection from '../components/calendar/calendar-section'
+import CalendarSection from '@/components/calendar/calendar-section'
 import { ContactForm } from '@/components/contact/form'
 
 export const metadata: Metadata = {

@@ -8,14 +8,14 @@ import { buttonVariants } from '../ui/button'
 import Link from 'next/link'
 
 interface CalendarLinkProps {
-  isCurrentPath: boolean
+  isCurrentPath?: boolean
   href: string
   index: number
   children: React.ReactNode
 }
 
 export const CalendarLink = ({
-  isCurrentPath,
+  isCurrentPath = false,
   href,
   index,
   children,
