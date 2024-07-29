@@ -88,8 +88,8 @@ export const ContactForm = () => {
             </h2>
 
             <p className="text-balance text-lg leading-8">
-              Jeśli masz pytania, potrzebujesz wsparcia, lub chcesz dowiedzieć
-              się więcej?
+              Masz pytania, potrzebujesz wsparcia, lub chcesz dowiedzieć się
+              więcej?
             </p>
 
             <p className="text-balance text-base leading-8">
