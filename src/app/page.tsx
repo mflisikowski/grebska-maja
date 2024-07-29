@@ -25,8 +25,8 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <div className="space-y-24 lg:space-y-36">
-      <Container className="relative z-10">
+    <div className="space-y-36 lg:space-y-36">
+      <Container>
         <FadeIn>
           <AboutHero />
         </FadeIn>
@@ -42,21 +42,21 @@ export default function HomePage() {
         </Container>
       </div>
 
-      <div id="offer" className="relative">
+      <div id="offer">
         <Container>
           <OfferSection />
         </Container>
       </div>
 
-      <div id="pricing" className="relative">
+      <div id="pricing">
         <Container>
           <PricingSection />
         </Container>
       </div>
 
-      <div id="contact" className="relative overflow-hidden pt-36 lg:py-16">
-        <Container className="relative">
-          <div className="relative z-10">
+      <div id="contact">
+        <Container>
+          <div>
             <ContactForm />
           </div>
         </Container>
