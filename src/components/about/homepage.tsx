@@ -38,8 +38,8 @@ export default function HeroSection() {
             <p className="mt-6 text-balance text-lg leading-loose text-gray-600">
               Pomagam dzieciom, młodzieży i dorosłym w radzeniu sobie z
               emocjami, wyzwaniami życiowymi, problemami w relacjach. Oferuję
-              kompleksową pomoc psychologiczną dostosowaną do indywidualnych
-              potrzeb każdego klienta.
+              kompleksową pomoc psychologiczną i psychoterapeutyczną dostosowaną
+              do indywidualnych potrzeb każdego klienta.
             </p>
           </div>
 
