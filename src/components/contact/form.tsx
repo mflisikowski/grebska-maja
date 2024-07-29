@@ -93,8 +93,8 @@ export const ContactForm = () => {
             </p>
 
             <p className="text-balance text-base leading-8">
-              Skontaktuj się ze mną już dziś! Wypełnij formularz kontaktowy
-              poniżej, zadzwoń lub wyślij e-mail.
+              Skontaktuj się ze mną już dziś! Wypełnij formularz kontaktowy,
+              zadzwoń lub wyślij e-mail.
             </p>
 
             <p className="text-balance text-base leading-8">
