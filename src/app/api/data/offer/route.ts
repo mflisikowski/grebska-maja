@@ -38,7 +38,7 @@ export async function GET(req: Request): Promise<Response> {
         description:
           'Osoby dorosłe często stają przed wieloma wyzwaniami życiowymi, które mogą wpływać na ich zdrowie i samopoczucie. Terapia może im pomóc w:',
         features: [
-          'Radzeniu sobie z depresją, zaburzeniami lękowymi i przewlekłym, stresem.',
+          'Radzeniu sobie z depresją, zaburzeniami lękowymi i przewlekłym stresem.',
           'Poprawie relacji interpersonalnych oraz umiejętności komunikacyjnych.',
           'Radzeniu sobie z problemami związanymi z pracą, wypaleniem zawodowym i trudnymi decyzjami życiowymi.',
           'Pracy nad rozwojem osobistym, zwiększaniem samoświadmości i budowaniem zdrowych nawyków myślowych.',
