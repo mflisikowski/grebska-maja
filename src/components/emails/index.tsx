@@ -35,7 +35,7 @@ const ContactFormEmail = ({
           <Container className="mx-auto my-[40px] max-w-[465px] rounded border border-solid border-[#eaeaea] p-[20px]">
             <Section className="mt-[32px] text-center">
               <Heading className="mx-0 my-[30px] p-0 text-[24px] font-normal text-black">
-                Nowa wiadomość z formularza kontaktowego
+                Potwierdzenie wysłania wiadomości
               </Heading>
             </Section>
             <Section className="mb-[32px]">
