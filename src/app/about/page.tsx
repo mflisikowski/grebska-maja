@@ -58,6 +58,34 @@ export default async function AboutPage() {
                   Szpitalu Psychiatrycznym w Gdańsku. Jestem członkiem Polskiego
                   Towarzystwa Terapii Poznawczej i Behawioralnej.
                 </p>
+
+                <p className="mt-6 text-lg leading-7 text-gray-600">
+                  Nieprzerwanie od 2015 roku pracuję z dziećmi i młodzieżą z
+                  trudnościami w zakresie emocji, umiejętności społecznych,
+                  koncentracji, z zaburzeniami zachowania, mowy , ADHD oraz
+                  zaburzeniami rozwoju (autyzm, zespół Aspergera). Udzielam
+                  również poradnictwa dla rodziców, które ma na celu wsparcie
+                  ich w radzeniu sobie z emocjami i trudnymi zachowaniami
+                  dzieci.
+                </p>
+
+                <p className="mt-6 text-lg leading-7 text-gray-600">
+                  Prowadzę również terapię osób dorosłych. Zapraszam do kontaktu
+                  osoby, które znalazły się w trudnej sytuacji życiowej,
+                  doświadczają lęku, ataków paniki, problemów w relacjach, mają
+                  obniżony nastrój, cierpią na zaburzenia ze spektrum autyzmu,
+                  ADHD.
+                </p>
+
+                <p className="mt-6 text-lg leading-7 text-gray-600">
+                  Pomagając pacjentom opieram się na zasadach psychoterapii
+                  poznawczo behawioralnej, wykorzystując elementy 3 fali
+                  (terapia schematu, terapia dialektyczno-behawioralna). Ważne
+                  dla mnie jest nawiązanie pozytywnej współpracy oraz relacji
+                  opartej na poczuciu bezpieczeństwa i szacunku. Ogromnie zależy
+                  mi również na atmosferze akceptacji i zrozumienia w gabinecie
+                  terapeutycznym.
+                </p>
               </div>
             </div>
           </div>
