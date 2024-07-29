@@ -39,7 +39,6 @@ export const ContactForm = () => {
 
     const date = new Date()
     const formattedDateString = createFormattedDateString(date)
-    console.log(formattedDateString)
 
     await fetch(`/api/send`, {
       method: 'POST',
