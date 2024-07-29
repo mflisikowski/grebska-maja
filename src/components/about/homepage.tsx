@@ -1,12 +1,7 @@
-import { VideoDialog } from '@/components/about/video-dialog'
 import HeroTypeAnimation from '@/components/client/hero'
 import { buttonVariants } from '@/components/ui/button'
 import { cn } from '@/utils'
-import {
-  ArrowRightIcon,
-  CheckCircleIcon,
-  PlayIcon,
-} from '@heroicons/react/24/outline'
+import { ArrowRightIcon, CheckCircleIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -74,24 +69,22 @@ export default function HeroSection() {
 
       <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
         <div className="w-full flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
-          <VideoDialog
-          // videoUrl="https://www.youtube.com/embed/33zzlA87raE"
-          >
-            <div className="group relative cursor-pointer">
-              <Image
-                className="aspect-square max-h-[500px] w-full rounded-lg bg-gray-50 object-cover shadow-lg sm:max-h-[700px] lg:mx-auto lg:aspect-[9/16] lg:max-w-lg xl:aspect-[3/4] 2xl:aspect-[3/5]"
-                src="/image.png"
-                width={600}
-                height={400}
-                priority
-                alt=""
-              />
+          {/* <VideoDialog videoUrl="https://www.youtube.com/embed/33zzlA87raE"> */}
+          <div className="group relative cursor-pointer">
+            <Image
+              className="aspect-square max-h-[500px] w-full rounded-lg bg-gray-50 object-cover shadow-lg sm:max-h-[700px] lg:mx-auto lg:aspect-[9/16] lg:max-w-lg xl:aspect-[3/4] 2xl:aspect-[3/5]"
+              src="/image.png"
+              width={600}
+              height={400}
+              priority
+              alt=""
+            />
 
-              <div className="absolute inset-0 left-1/2 top-1/2 flex h-32 w-32 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white/15 opacity-5 transition-opacity duration-300 group-hover:opacity-100">
-                <PlayIcon className="h-16 w-16 translate-x-1 text-white transition-transform duration-300 group-hover:scale-105" />
-              </div>
-            </div>
-          </VideoDialog>
+            {/* <div className="absolute inset-0 left-1/2 top-1/2 flex h-32 w-32 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white/15 opacity-5 transition-opacity duration-300 group-hover:opacity-100">
+              <PlayIcon className="h-16 w-16 translate-x-1 text-white transition-transform duration-300 group-hover:scale-105" />
+            </div> */}
+          </div>
+          {/* </VideoDialog> */}
         </div>
       </div>
     </div>

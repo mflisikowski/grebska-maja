@@ -1,7 +1,5 @@
-import { VideoDialog } from '@/components/about/video-dialog'
 import FadeIn from '@/components/client/fade-in'
 import { Container } from '@/components/container'
-import { PlayIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 
 // import { type Metadata } from 'next'
@@ -26,9 +24,9 @@ export default async function AboutPage() {
                 alt=""
               />
 
-              <div className="absolute inset-0 left-1/2 top-1/2 flex h-32 w-32 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white/15 opacity-5 transition-opacity duration-300 group-hover:opacity-100">
+              {/* <div className="absolute inset-0 left-1/2 top-1/2 flex h-32 w-32 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white/15 opacity-5 transition-opacity duration-300 group-hover:opacity-100">
                 <PlayIcon className="h-16 w-16 translate-x-1 text-white transition-transform duration-300 group-hover:scale-105" />
-              </div>
+              </div> */}
             </div>
             {/* </VideoDialog> */}
           </div>
