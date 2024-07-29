@@ -1,10 +1,11 @@
 import AboutHero from '@/components/about/homepage'
 import FadeIn from '@/components/client/fade-in'
 import { Container } from '@/components/container'
-import { CalendarDaysIcon } from '@heroicons/react/24/outline'
+import { CalendarDaysIcon, CheckIcon } from '@heroicons/react/24/outline'
 import { type Metadata } from 'next'
 import CalendarSection from '@/components/calendar/calendar-section'
 import { ContactForm } from '@/components/contact/form'
+import PricingSection from '@/components/pricing/homepage'
 
 export const metadata: Metadata = {
   description: `mgr Maja Grębska - Psycholog, pedagog specjalny. Zależy mi na tworzenie bezpiecznej, pełnej szacunku i zrozumienia atmosfery w gabinecie terapeutycznym.`,
@@ -37,6 +38,12 @@ export default function HomePage() {
           <div className="relative z-10">
             <CalendarSection />
           </div>
+        </Container>
+      </div>
+
+      <div id="pricing" className="relative">
+        <Container>
+          <PricingSection />
         </Container>
       </div>
 
