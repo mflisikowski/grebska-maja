@@ -32,11 +32,11 @@ export default function HomePage() {
         </FadeIn>
       </Container>
 
-      <div id="calendar" className="relative overflow-hidden pt-36 lg:py-16">
+      <div className="relative overflow-hidden">
         <Container className="relative">
           <CalendarDaysIcon className="absolute -top-16 left-6 h-2/6 w-2/6 -rotate-12 transform text-slate-500 opacity-5 lg:left-1/4 lg:top-1/4 lg:h-1/2 lg:w-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 lg:-rotate-12" />
 
-          <div className="relative z-10">
+          <div id="calendar" className="relative z-10 -scroll-mt-12">
             <CalendarSection />
           </div>
         </Container>
@@ -54,7 +54,7 @@ export default function HomePage() {
         </Container>
       </div>
 
-      <div id="contact">
+      <div id="contact" className="scroll-mt-36">
         <Container>
           <div>
             <ContactForm />

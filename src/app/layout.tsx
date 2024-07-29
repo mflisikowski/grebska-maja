@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="h-full text-base antialiased">
+    <html className="h-full scroll-smooth text-base antialiased" lang="en">
       <body
         className={cn(
           'flex min-h-screen flex-col bg-background font-sans antialiased',
