@@ -16,23 +16,21 @@ export default async function AboutPage() {
       <Container>
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-4">
-            <VideoDialog
-            // videoUrl="https://www.youtube.com/embed/33zzlA87raE"
-            >
-              <div className="group relative cursor-pointer">
-                <Image
-                  className="aspect-square max-h-[500px] w-full rounded-lg bg-gray-50 object-cover shadow-lg sm:max-h-[700px] lg:mx-auto lg:aspect-[9/16] lg:max-w-lg xl:aspect-[3/4] 2xl:aspect-[3/5]"
-                  src="/image.png"
-                  width={600}
-                  height={400}
-                  alt=""
-                />
+            {/* <VideoDialog videoUrl="https://www.youtube.com/embed/33zzlA87raE"> */}
+            <div className="group relative cursor-pointer">
+              <Image
+                className="aspect-square max-h-[500px] w-full rounded-lg bg-gray-50 object-cover shadow-lg sm:max-h-[700px] lg:mx-auto lg:aspect-[9/16] lg:max-w-lg xl:aspect-[3/4] 2xl:aspect-[3/5]"
+                src="/image.png"
+                width={600}
+                height={400}
+                alt=""
+              />
 
-                <div className="absolute inset-0 left-1/2 top-1/2 flex h-32 w-32 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white/15 opacity-5 transition-opacity duration-300 group-hover:opacity-100">
-                  <PlayIcon className="h-16 w-16 translate-x-1 text-white transition-transform duration-300 group-hover:scale-105" />
-                </div>
+              <div className="absolute inset-0 left-1/2 top-1/2 flex h-32 w-32 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white/15 opacity-5 transition-opacity duration-300 group-hover:opacity-100">
+                <PlayIcon className="h-16 w-16 translate-x-1 text-white transition-transform duration-300 group-hover:scale-105" />
               </div>
-            </VideoDialog>
+            </div>
+            {/* </VideoDialog> */}
           </div>
 
           <div>
