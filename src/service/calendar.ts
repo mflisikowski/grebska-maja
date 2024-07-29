@@ -1,7 +1,9 @@
 import { API_URL } from '@/constants'
 
 export async function fetchCalendarData() {
-  const response = await fetch(`https://${API_URL}/api/data/calendar/`)
+  const response = await fetch(`${API_URL}/api/data/calendar/`, {
+    cache: 'no-store',
+  })
 
   if (!response) {
     throw new Error('Failed to fetch response')
