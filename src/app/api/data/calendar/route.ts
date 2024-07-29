@@ -47,5 +47,3 @@ export async function GET(req: Request): Promise<Response> {
     return new Response('Internal Server Error', { status: 500 })
   }
 }
-
-export const revalidate = 0
