@@ -23,10 +23,7 @@ export default async function Header() {
           <div className="flex-1 text-right">
             <Link
               href="https://www.znanylekarz.pl/maja-grebska/psycholog-psychoterapeuta/pruszcz-gdanski"
-              className={cn(
-                'hover:bg-[#00b39b]/ bg-[#00b39b]/90 text-sm',
-                buttonVariants({ variant: 'ghost' }),
-              )}
+              className={cn(buttonVariants({ variant: 'znanylekarz' }))}
               target="_blank"
             >
               <Image

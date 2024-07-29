@@ -19,6 +19,7 @@ const buttonVariants = cva(
         ghost: 'hover:bg-accent hover:text-accent-foreground',
         link: 'text-primary underline-offset-4 hover:underline',
         black: 'bg-black text-white hover:bg-black/90',
+        znanylekarz: 'bg-[#00b39b]/90 text-sm hover:bg-[#00b39b]',
       },
       size: {
         default: 'h-10 px-4 py-2',
