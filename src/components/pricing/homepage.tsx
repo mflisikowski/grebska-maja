@@ -12,8 +12,8 @@ export default function PricingSection() {
         </h2>
         <p className="mt-6 text-balance text-lg leading-8 text-gray-600">
           Niezależnie od tego, czy chodzi o wstępną konsultację, czy regularną
-          terapię indywidualną, nasza cena za pojedynczą sesję obejmuje
-          wszystko, czego potrzebujesz dla skutecznej i troskliwej opieki.
+          terapię indywidualną, cena za pojedynczą sesję obejmuje wszystko,
+          czego potrzebujesz dla skutecznej i troskliwej opieki.
         </p>
       </div>
       <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
