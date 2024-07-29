@@ -1,10 +1,10 @@
 import { Container } from '@/components/container'
 import { NavigationDesktop, NavigationMobile } from '@/components/navigation'
 import UndoButton from '@/components/undo-button'
+import { buttonVariants } from '@/components/ui/button'
 import { cn } from '@/utils'
 import Image from 'next/image'
 import Link from 'next/link'
-import { buttonVariants } from './ui/button'
 
 export default async function Header() {
   return (
@@ -31,7 +31,15 @@ export default async function Header() {
             >
               <Image
                 src="/znany-lekarz-logo.svg"
-                className="h-4 w-auto"
+                className="hidden h-4 w-auto lg:block"
+                width={210}
+                height={34}
+                alt=""
+              />
+
+              <Image
+                src="/znany-lekarz-logo-sygnet.svg"
+                className="h-4 w-auto lg:hidden"
                 width={210}
                 height={34}
                 alt=""
