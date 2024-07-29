@@ -11,7 +11,7 @@ export default async function CalendarSection() {
       <div className="flex flex-col items-center space-y-24">
         <div className="w-full rounded-lg px-4 py-6 lg:max-w-xl lg:flex-auto">
           <h2 className="text-balance text-center text-3xl font-bold leading-tight tracking-tight text-gray-900 sm:text-5xl">
-            Wsparcie Psychologiczne dla Ciebie i Twojej Rodziny
+            Wsparcie Psychoterapeutyczne dla Ciebie i Twojej Rodziny
           </h2>
         </div>
 

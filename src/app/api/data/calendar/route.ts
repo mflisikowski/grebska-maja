@@ -18,9 +18,9 @@ export async function GET(req: Request): Promise<Response> {
         description:
           'Konsultacje psychologiczne to pierwsze spotkania, podczas których psychoterapeuta przeprowadza szczegółowy wywiad, aby zrozumieć Twoje problemy i potrzeby. Jest to także okazja, aby omówić cele terapii i zdecydować o dalszych krokach.',
         features: [
-          'Szczegółowy wywiad, który umożliwi Ci jak zaczań zrozumiec rozwiązania',
-          'Pomoc w identyfikacji i poprawie negatywnych wzorców',
+          'Szczegółowy wywiad, który umożliwi Mi zrozumieć Twoje problemy i potrzeby',
           'Omówienie celu terapii i zdecydowanie o dalszych krokach',
+          'Dostosowywanie strategii terapeutycznej',
         ],
       },
       {
@@ -34,7 +34,7 @@ export async function GET(req: Request): Promise<Response> {
         features: [
           'Praca nad identyfikacją i zmianą negatywnych wzorców myślenia i zachowania',
           'Poprawa samopoczucia',
-          'Dostosowywanie strategii terapeutycznej',
+          'Rozwijanie umiejętności radzenia sobie',
         ],
       },
     ]
@@ -47,3 +47,5 @@ export async function GET(req: Request): Promise<Response> {
     return new Response('Internal Server Error', { status: 500 })
   }
 }
+
+export const revalidate = 0
