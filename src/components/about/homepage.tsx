@@ -23,11 +23,11 @@ export default function HeroSection() {
             <HeroTypeAnimation
               className="mt-4 text-xl font-semibold leading-8 text-gray-900"
               sequence={[
+                'Specjalizuję się w psychoterapii poznawczo-behawioralnej',
+                1000,
                 'Specjalizuję się w pracy z młodzieżą',
                 1000,
                 'Specjalizuję się w pracy z dorosłymi',
-                1000,
-                'Specjalizuję się w terapii poznawczo-behawioralnej',
                 1000,
               ]}
               wrapper="span"
@@ -37,9 +37,9 @@ export default function HeroSection() {
 
             <p className="mt-6 text-balance text-lg leading-loose text-gray-600">
               Pomagam dzieciom, młodzieży i dorosłym w radzeniu sobie z
-              emocjami, trudnymi zachowaniami oraz problemami w relacjach.
-              Oferuję kompleksową pomoc psychologiczną dostosowaną do
-              indywidualnych potrzeb każdego klienta.
+              emocjami, wyzwaniami życiowymi, problemami w relacjach. Oferuję
+              kompleksową pomoc psychologiczną dostosowaną do indywidualnych
+              potrzeb każdego klienta.
             </p>
           </div>
 
