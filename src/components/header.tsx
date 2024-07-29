@@ -1,10 +1,10 @@
 import { Container } from '@/components/container'
-import {
-  NavigationDesktop,
-  NavigationMobile,
-  NavItemLink,
-} from '@/components/navigation'
+import { NavigationDesktop, NavigationMobile } from '@/components/navigation'
 import UndoButton from '@/components/undo-button'
+import { cn } from '@/utils'
+import Image from 'next/image'
+import Link from 'next/link'
+import { buttonVariants } from './ui/button'
 
 export default async function Header() {
   return (
@@ -21,7 +21,22 @@ export default async function Header() {
           </div>
 
           <div className="flex-1 text-right">
-            <NavItemLink href="/#contact">Kontakt</NavItemLink>
+            <Link
+              href="https://www.znanylekarz.pl/maja-grebska/psycholog-psychoterapeuta/pruszcz-gdanski"
+              className={cn(
+                'hover:bg-[#00b39b]/ bg-[#00b39b]/90 text-sm',
+                buttonVariants({ variant: 'ghost' }),
+              )}
+              target="_blank"
+            >
+              <Image
+                src="/znany-lekarz-logo.svg"
+                className="h-4 w-auto"
+                width={210}
+                height={34}
+                alt=""
+              />
+            </Link>
           </div>
         </div>
       </Container>

@@ -26,8 +26,13 @@ export function NavigationMobile() {
             </Link>
           </DropdownMenuCheckboxItem>
           <DropdownMenuCheckboxItem className="flex items-center p-0">
-            <Link className="flex-1 p-6 text-base" href="/#alendar">
+            <Link className="flex-1 p-6 text-base" href="/#calendar">
               Kalendarz
+            </Link>
+          </DropdownMenuCheckboxItem>
+          <DropdownMenuCheckboxItem className="flex items-center p-0">
+            <Link className="flex-1 p-6 text-base" href="/#contact">
+              Kontakt
             </Link>
           </DropdownMenuCheckboxItem>
         </DropdownMenuContent>
@@ -41,6 +46,7 @@ export function NavigationDesktop() {
     <div className="hidden lg:flex">
       <NavItemLink href="/about">O mnie</NavItemLink>
       <NavItemLink href="/#calendar">Kalendarz</NavItemLink>
+      <NavItemLink href="/#contact">Kontakt</NavItemLink>
     </div>
   )
 }
