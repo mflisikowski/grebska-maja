@@ -22,9 +22,9 @@ export default function PricingSection() {
             Konsultacja psychologiczna / psychoterapia indywidualna
           </h3>
           <p className="mt-6 text-base leading-7 text-gray-600">
-            Nasze usługi są dostosowane do Twoich unikalnych potrzeb,
-            zapewniając kompleksowe i spersonalizowane podejście do Twojego
-            zdrowia psychicznego.
+            Moje usługi są dostosowane do Twoich unikalnych potrzeb, zapewniając
+            kompleksowe i spersonalizowane podejście do Twojego zdrowia
+            psychicznego.
           </p>
           <div className="mt-10 flex items-center gap-x-4">
             <div className="h-px flex-auto bg-gray-100" />
