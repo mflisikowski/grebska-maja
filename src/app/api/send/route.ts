@@ -12,6 +12,7 @@ export async function POST(request: NextRequest) {
     const { data, error } = await resend.emails.send({
       from: `www.majagrebska.pl <${process.env.RESEND_SEND_FROM!}>`,
       to: [process.env.RESEND_SEND_TO!],
+      cc: [email],
       subject: `Wiadomość od ${name} / ${phone} / ${email}`,
       react: ContactFormEmail({
         name,
