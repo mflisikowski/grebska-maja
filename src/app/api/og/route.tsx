@@ -3,22 +3,15 @@
 import { getSearchParams } from '@/utils'
 import { ImageResponse } from 'next/og'
 
-import {
-  metadata_og_image_dimensions,
-  metadata_og_description,
-  metadata_og_image_url,
-  metadata_og_image_alt,
-  metadata_og_title,
-} from '@/metadata/og'
+import { SEOTitle, SEODescription } from '@/metadata/seo'
 
 export async function GET(request: Request) {
   const title =
-    getSearchParams(request.url, { key: 'title', slice: 100 }) ||
-    metadata_og_title
+    getSearchParams(request.url, { key: 'title', slice: 100 }) || SEOTitle
 
   const description =
     getSearchParams(request.url, { key: 'description', slice: 100 }) ||
-    metadata_og_description
+    SEODescription
 
   try {
     return new ImageResponse(
@@ -35,17 +28,14 @@ export async function GET(request: Request) {
           <div
             style={{
               display: 'flex',
-              // marginTop: 0,
-              // marginRight: '40px',
-              // marginBottom: 0,
               flexShrink: 0,
               height: '100%',
               width: '400px',
             }}
           >
             <img
-              alt={metadata_og_image_alt}
-              src={metadata_og_image_url}
+              alt={title}
+              src={process.env.NEXT_PUBLIC_OG_IMAGE_URL!}
               style={{
                 display: 'flex',
                 objectFit: 'cover',
@@ -93,7 +83,10 @@ export async function GET(request: Request) {
           </div>
         </div>
       ),
-      { ...metadata_og_image_dimensions },
+      {
+        width: 1200,
+        height: 630,
+      },
     )
   } catch (e: any) {
     console.error(e.message)

@@ -8,21 +8,9 @@ import { ContactForm } from '@/components/contact/form'
 import PricingSection from '@/components/pricing/homepage'
 import OfferSection from '@/components/offer/homepage'
 import FaqSection from '@/components/faq/homepage'
+import SEOMetadata from '@/metadata'
 
-export const metadata: Metadata = {
-  description: `mgr Maja Grębska - Psycholog, pedagog specjalny. Zależy mi na tworzenie bezpiecznej, pełnej szacunku i zrozumienia atmosfery w gabinecie terapeutycznym.`,
-  title: 'mgr Maja Grębska',
-  openGraph: {
-    title: 'mgr Maja Grębska',
-    description: `mgr Maja Grębska - Psycholog, pedagog specjalny. Zależy mi na tworzenie bezpiecznej, pełnej szacunku i zrozumienia atmosfery w gabinecie terapeutycznym.`,
-  },
-  twitter: {
-    title: 'mgr Maja Grębska',
-    description: `mgr Maja Grębska - Psycholog, pedagog specjalny. Zależy mi na tworzenie bezpiecznej, pełnej szacunku i zrozumienia atmosfery w gabinecie terapeutycznym.`,
-  },
-  keywords: ['mgr', 'maja', 'grébska', 'psycholog', 'pedagog', 'specjalny'],
-  authors: [{ name: 'mgr Maja Grębska' }],
-}
+export const metadata: Metadata = SEOMetadata
 
 export default function HomePage() {
   return (
