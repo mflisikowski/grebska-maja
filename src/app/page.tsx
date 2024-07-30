@@ -7,6 +7,7 @@ import CalendarSection from '@/components/calendar/calendar-section'
 import { ContactForm } from '@/components/contact/form'
 import PricingSection from '@/components/pricing/homepage'
 import OfferSection from '@/components/offer/homepage'
+import FaqSection from '@/components/faq/homepage'
 
 export const metadata: Metadata = {
   description: `mgr Maja Grębska - Psycholog, pedagog specjalny. Zależy mi na tworzenie bezpiecznej, pełnej szacunku i zrozumienia atmosfery w gabinecie terapeutycznym.`,
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <div className="space-y-36 lg:space-y-36">
+    <div className="space-y-36 lg:space-y-44">
       <Container>
         <FadeIn>
           <AboutHero />
@@ -51,6 +52,12 @@ export default function HomePage() {
       <div id="pricing">
         <Container>
           <PricingSection />
+        </Container>
+      </div>
+
+      <div id="faq" className="scroll-mt-36">
+        <Container>
+          <FaqSection />
         </Container>
       </div>
 
