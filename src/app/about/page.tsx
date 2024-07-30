@@ -36,11 +36,11 @@ export default async function AboutPage() {
               <p className="text-base font-semibold leading-7">O mnie</p>
               <div className="max-w-xl">
                 <p className="mt-6 text-xl font-medium leading-8 text-gray-600">
-                  Jestem psychologiem, pedagogiem specjalnym oraz
-                  psychoterapeutą poznawczo-behawioralnym w trakcie szkolenia.
-                  Obecnie realizuję czteroletnie studia w Szkole Psychoterapii
-                  Poznawczo-Behawioralnej Uniwersytetu SWPS, które pozwolą mi
-                  ubiegać się o Certyfikat Psychoterapeuty
+                  Jestem psychologiem, psychoterapeutą poznawczo-behawioralnym w
+                  trakcie szkolenia oraz pedagogiem specjalnym w trakcie
+                  szkolenia. Obecnie realizuję czteroletnie studia w Szkole
+                  Psychoterapii Poznawczo-Behawioralnej Uniwersytetu SWPS, które
+                  pozwolą mi ubiegać się o Certyfikat Psychoterapeuty
                   Poznawczo-Behawioralnego PTTPB. Ukończyłam także dwuletnie
                   studia podyplomowe na kierunku Stosowana Analiza Zachowania na
                   Uniwersytecie SWPS w Sopocie, gdzie specjalizowałam się w
