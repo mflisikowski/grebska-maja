@@ -9,6 +9,29 @@ import Link from 'next/link'
 import { cn } from '@/utils'
 import { Bars2Icon } from '@heroicons/react/24/outline'
 
+const navigationItems = [
+  {
+    name: 'O mnie',
+    href: '/about',
+  },
+  {
+    name: 'Kalendarz',
+    href: '/#calendar',
+  },
+  {
+    name: 'Cennik',
+    href: '/#pricing',
+  },
+  {
+    name: 'FAQ',
+    href: '/#faq',
+  },
+  {
+    name: 'Kontakt',
+    href: '/#contact',
+  },
+]
+
 export function NavigationMobile() {
   return (
     <div className="lg:hidden">
@@ -20,21 +43,16 @@ export function NavigationMobile() {
         </DropdownMenuTrigger>
 
         <DropdownMenuContent className="w-screen max-w-sm space-y-2 py-2">
-          <DropdownMenuCheckboxItem className="flex items-center p-0">
-            <Link className="flex-1 p-6 text-base" href="/about">
-              O mnie
-            </Link>
-          </DropdownMenuCheckboxItem>
-          <DropdownMenuCheckboxItem className="flex items-center p-0">
-            <Link className="flex-1 p-6 text-base" href="/#calendar">
-              Kalendarz
-            </Link>
-          </DropdownMenuCheckboxItem>
-          <DropdownMenuCheckboxItem className="flex items-center p-0">
-            <Link className="flex-1 p-6 text-base" href="/#contact">
-              Kontakt
-            </Link>
-          </DropdownMenuCheckboxItem>
+          {navigationItems.map((item) => (
+            <DropdownMenuCheckboxItem
+              className="flex items-center p-0"
+              key={item.name}
+            >
+              <Link className="flex-1 p-6 text-base" href={item.href}>
+                {item.name}
+              </Link>
+            </DropdownMenuCheckboxItem>
+          ))}
         </DropdownMenuContent>
       </DropdownMenu>
     </div>
@@ -44,9 +62,11 @@ export function NavigationMobile() {
 export function NavigationDesktop() {
   return (
     <div className="hidden lg:flex">
-      <NavItemLink href="/about">O mnie</NavItemLink>
-      <NavItemLink href="/#calendar">Kalendarz</NavItemLink>
-      <NavItemLink href="/#contact">Kontakt</NavItemLink>
+      {navigationItems.map((item) => (
+        <NavItemLink key={item.name} href={item.href}>
+          {item.name}
+        </NavItemLink>
+      ))}
     </div>
   )
 }
