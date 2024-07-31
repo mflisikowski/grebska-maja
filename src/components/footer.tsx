@@ -1,21 +1,12 @@
-// import { Container } from '@/components/container'
+import CreatorMflisikowski from '@/components/creator/mflisikowski'
+import Copyright from '@/components/Copyright'
 
-// export default async function Footer() {
-//   return (
-//     <Container className="w-full">
-//       <></>
-//     </Container>
-//   )
-// }
-
-export default function Example() {
+export default function Footer() {
   return (
     <footer className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
-      <div className="mt-8 md:order-1 md:mt-0">
-        <p className="text-center text-sm leading-5 text-gray-500">
-          &copy; {new Date().getFullYear()} mgr Maja Grębska, Wszelkie prawa
-          zastrzeżone.
-        </p>
+      <div className="flex flex-col items-center space-y-4 lg:w-full lg:flex-row lg:justify-between lg:space-y-0">
+        <Copyright />
+        <CreatorMflisikowski />
       </div>
     </footer>
   )
