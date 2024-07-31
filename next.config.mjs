@@ -1,3 +1,5 @@
+import 'dotenv/config'
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
@@ -5,6 +7,10 @@ const nextConfig = {
             {
                 protocol: 'https',
                 hostname: 'images.unsplash.com',
+            },
+            {
+                protocol: 'https',
+                hostname: 'avatars.githubusercontent.com',
             },
         ]
     },
