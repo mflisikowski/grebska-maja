@@ -1,7 +1,14 @@
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@/components/ui/tooltip'
+import { fetchCalendarData } from '@/service/calendar'
 import { CalendarData } from '@/types'
 import { Container } from '../container'
 import { CalendarLink } from './calendar-link'
-import { fetchCalendarData } from '@/service/calendar'
+import { cn } from '@/utils'
 
 export default async function CalendarSection() {
   const { data } = await fetchCalendarData()
@@ -22,23 +29,43 @@ export default async function CalendarSection() {
 
               return (
                 <div
-                  className={`flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:px-10 ${
-                    isEven ? 'text-right' : 'text-left'
-                  }`}
+                  className="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:px-10"
                   key={data.id}
                 >
                   <div className="group relative flex flex-col justify-between gap-6">
-                    <h3 className="flex flex-col text-balance text-2xl leading-8 tracking-tight text-gray-900 underline-offset-8">
+                    <h3
+                      className={cn(
+                        'flex flex-col text-balance text-center text-2xl leading-8 tracking-tight text-gray-900 underline-offset-8',
+                        isEven ? 'lg:text-right' : 'lg:text-left',
+                      )}
+                    >
                       {data.name}
                     </h3>
 
-                    <p className="flex flex-col text-xl leading-8 tracking-tight text-gray-900">
-                      <span className="line-clamp-3">{data.description}</span>
-                    </p>
+                    <TooltipProvider>
+                      <Tooltip>
+                        <TooltipTrigger>
+                          <p
+                            className={cn(
+                              'flex flex-col text-center text-xl leading-8 tracking-tight text-gray-900',
+                              isEven ? 'lg:text-right' : 'lg:text-left',
+                            )}
+                          >
+                            <span className="lg:line-clamp-3">
+                              {data.description}
+                            </span>
+                          </p>
+                        </TooltipTrigger>
+
+                        <TooltipContent className="max-w-xl text-balance text-center text-xl">
+                          <>{data.description}</>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
 
                     <div
-                      className={`flex items-center gap-x-6 ${
-                        isEven ? 'justify-end' : 'justify-start'
+                      className={`flex items-center justify-center gap-x-6 ${
+                        isEven ? 'lg:justify-end' : 'lg:justify-start'
                       }`}
                     >
                       <div className="text-base">
