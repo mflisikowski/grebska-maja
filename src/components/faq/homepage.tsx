@@ -12,12 +12,12 @@ export default async function FaqSection() {
   const { data } = await fetchFaqData()
 
   return (
-    <div className="space-y-36">
-      <div className="mx-auto max-w-2xl sm:text-center">
-        <h2 className="text-balance text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+    <div className="space-y-24">
+      <div className="mx-auto max-w-xs sm:text-center lg:max-w-2xl">
+        <h2 className="text-balance text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Często Zadawane Pytania
         </h2>
-        <p className="mt-6 text-balance text-lg leading-8 text-gray-600">
+        <p className="mt-6 text-balance text-center text-lg leading-8 text-gray-600">
           Dowiedz się więcej o istotnych kwestiach, które mogą Cię interesować.
           Jeśli nie znajdziesz tutaj odpowiedzi na swoje pytanie, zawsze możesz
           skontaktować się bezpośrednio.
