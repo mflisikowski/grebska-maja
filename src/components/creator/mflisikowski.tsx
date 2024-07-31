@@ -10,7 +10,7 @@ import Link from 'next/link'
 import { Octokit } from 'octokit'
 import Image from 'next/image'
 
-export default async function CreatorMflisikowski() {
+export default async function Creator() {
   const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN })
   const { data } = await octokit.request('GET /users/mflisikowski')
 
