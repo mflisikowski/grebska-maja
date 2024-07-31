@@ -1,6 +1,6 @@
 import { SEODescription, SEOKeywords, SEOTitle } from '@/metadata/seo'
+import { creatorFullName, creatorUrl } from '@/metadata/creator'
 import { Metadata } from 'next'
-import { authorFullName, authorUrl } from './creator'
 
 const metadata: Metadata = {
   metadataBase: new URL(
@@ -30,12 +30,12 @@ const metadata: Metadata = {
 
   authors: [
     {
-      name: authorFullName,
-      url: authorUrl,
+      name: creatorFullName,
+      url: creatorUrl,
     },
   ],
 
-  creator: authorFullName,
+  creator: creatorFullName,
 }
 
 export default metadata
