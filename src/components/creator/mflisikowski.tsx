@@ -9,6 +9,7 @@ import { cn } from '@/utils'
 import Link from 'next/link'
 import { Octokit } from 'octokit'
 import Image from 'next/image'
+import { creatorBio, creatorEmail, creatorUrl } from '@/metadata/creator'
 
 export default async function Creator() {
   const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN })
@@ -22,7 +23,7 @@ export default async function Creator() {
       <HoverCard>
         <HoverCardTrigger asChild>
           <Link
-            href={`https://${blog}`}
+            href={`https://${blog ? blog : creatorUrl}`}
             target="_blank"
             className={cn(
               buttonVariants({ variant: 'link' }),
@@ -30,7 +31,7 @@ export default async function Creator() {
             )}
           >
             <GlobeAltIcon className="inline-block h-4 w-4 transition duration-500 group-hover:rotate-180" />
-            <p className="font-semibold">{blog}</p>
+            <p className="font-semibold">{blog ? blog : creatorUrl}</p>
           </Link>
         </HoverCardTrigger>
 
@@ -45,18 +46,18 @@ export default async function Creator() {
             />
             <div className="space-y-0">
               <p className="text-balance text-sm leading-6 text-gray-600">
-                {bio}
+                {bio ? bio : creatorBio}
               </p>
               <p className="flex items-center gap-2 text-balance text-sm text-gray-600">
                 <EnvelopeIcon className="inline-block h-4 w-4" />
                 <Link
-                  href={`mailto:${email}`}
+                  href={`mailto:${email ? email : creatorEmail}`}
                   className={cn(
                     buttonVariants({ variant: 'link' }),
                     'group flex items-center gap-2 p-0 text-sm text-zinc-500',
                   )}
                 >
-                  {email}
+                  {email ? email : creatorEmail}
                 </Link>
               </p>
             </div>
