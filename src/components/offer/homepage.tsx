@@ -11,11 +11,11 @@ import {
 import { ArrowRightIcon, CheckIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import { cn } from '@/utils'
-import { fetchOfferData } from '@/service/offer'
+import { fetchOfferData } from '@/repositories/fetch-offer-data'
 import { OfferData } from '@/types'
 
 export default async function OfferSection() {
-  const { data } = await fetchOfferData()
+  const data = await fetchOfferData()
 
   return (
     <div className="flex flex-col items-center space-y-24">

@@ -11,8 +11,13 @@ export default function HeroSection() {
     <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
       <div className="flex flex-col space-y-6">
         <div className="flex flex-col gap-8 text-center lg:text-left">
-          <h2 className="text-balance text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
-            mgr Maja Grębska
+          <h2 className="space-y-2 text-gray-900">
+            <span className="flex text-balance text-3xl leading-10 tracking-wider">
+              Psycholog Pruszcz Gdański
+            </span>
+            <span className="flex text-balance text-4xl font-extrabold leading-10 tracking-wide text-gray-900 sm:text-5xl">
+              mgr Maja Grębska
+            </span>
           </h2>
 
           <div className="flex min-h-16 items-center text-center lg:min-h-min">

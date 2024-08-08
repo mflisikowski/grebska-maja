@@ -4,14 +4,14 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip'
-import { fetchCalendarData } from '@/service/calendar'
+import { fetchCalendarData } from '@/repositories/fetch-calendar-data'
 import { CalendarData } from '@/types'
 import { Container } from '../container'
 import { CalendarLink } from './calendar-link'
 import { cn } from '@/utils'
 
 export default async function CalendarSection() {
-  const { data } = await fetchCalendarData()
+  const data = await fetchCalendarData()
 
   return (
     <Container>

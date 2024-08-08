@@ -4,12 +4,12 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion'
-import { fetchFaqData } from '@/service/faq'
+import { fetchFaqData } from '@/repositories/fetch-faq-data'
 import { FaqData } from '@/types'
 import { CheckIcon } from 'lucide-react'
 
 export default async function FaqSection() {
-  const { data } = await fetchFaqData()
+  const data = await fetchFaqData()
 
   return (
     <div className="space-y-24">
