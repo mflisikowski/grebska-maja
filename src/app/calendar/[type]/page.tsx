@@ -2,7 +2,7 @@ import CalcomEmbed from '@/components/calcom-embed'
 import { CalendarLink } from '@/components/calendar/calendar-link'
 import FadeIn from '@/components/client/fade-in'
 import { Container } from '@/components/container'
-import { fetchCalendarData } from '@/service/calendar'
+import { fetchCalendarData } from '@/repositories/fetch-calendar-data'
 import { CalendarData, calendarValidTypes } from '@/types'
 import { cn } from '@/utils'
 import { CheckIcon } from '@heroicons/react/24/outline'
@@ -13,14 +13,19 @@ export default async function CalendarPage({
 }: {
   params: { type: string }
 }) {
-  const response = await fetchCalendarData()
+  const data = await fetchCalendarData()
 
-  if (!calendarValidTypes.includes(params.type) || !response.data) {
+  if (!calendarValidTypes.includes(params.type)) {
     return notFound()
   }
 
-  const { name, description, features, id, price, duration } =
-    response.data.find((item: CalendarData) => item.id === params.type)
+  const calendar = data.find((item: CalendarData) => item.id === params.type)
+
+  if (!calendar) {
+    return notFound()
+  }
+
+  const { name, description, features, id, price, duration } = calendar
 
   return (
     <div id={`calendar-${id}`} className="space-y-16 lg:space-y-36">
@@ -41,7 +46,7 @@ export default async function CalendarPage({
         <div className="flex flex-col items-center space-y-24">
           <div>
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-6 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-              {response.data.map((data: CalendarData, index: number) => {
+              {data.map((data: CalendarData, index: number) => {
                 const isCurrentPath = data.href.includes(params.type)
                 const isEven = index % 2 === 0
 
