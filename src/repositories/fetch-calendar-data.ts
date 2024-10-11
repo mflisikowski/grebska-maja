@@ -5,7 +5,7 @@ export async function fetchCalendarData() {
     {
       name: 'Konsultacja psychologiczna',
       duration: '50 min',
-      price: '180 PLN',
+      price: '200 PLN',
       id: 'psychological-consultation',
       href: '/calendar/psychological-consultation',
       description:
@@ -19,7 +19,7 @@ export async function fetchCalendarData() {
     {
       name: 'Psychoterapia indywidualna',
       duration: '50 min',
-      price: '180 PLN',
+      price: '200 PLN',
       id: 'individual-psychotherapy',
       href: '/calendar/individual-psychotherapy',
       description:
