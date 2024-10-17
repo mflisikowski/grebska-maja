@@ -153,11 +153,10 @@ export const ContactForm = () => {
                         className="h-7 w-6"
                       />{' '}
                     </p>
+
                     <p className="flex flex-col space-y-4">
-                      <span className="text-nowrap">
-                        Ul. Krótka 1A, Pruszcz Gdański
-                      </span>
-                      <span className="text-nowrap">
+                      <span>Ul. Krótka 1A, Pruszcz Gdański</span>
+                      <span>
                         (przystanek autobusowy Pruszcz Gdański, Chopina)
                       </span>
                     </p>
