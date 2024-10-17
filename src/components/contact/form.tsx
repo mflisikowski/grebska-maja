@@ -134,11 +134,13 @@ export const ContactForm = () => {
                     className="h-7 w-6 flex-shrink-0"
                     aria-hidden="true"
                   />
-                  <p className="flex flex-col items-center gap-x-4 text-balance hover:underline lg:flex-row">
+                  <p className="flex w-full flex-col gap-x-4 text-balance text-left hover:underline">
                     <span className="text-nowrap">
-                      Ul. Borówkowa 32, Rotmanka
+                      Ul. Krótka 1A, Pruszcz Gdański
                     </span>
-                    <span className="text-nowrap">k. Pruszcza Gdańskiego</span>
+                    <span className="text-wrap">
+                      (przystanek autobusowy Pruszcz Gdański, Chopina)
+                    </span>
                   </p>
                 </div>
               </DrawerTrigger>
@@ -150,7 +152,14 @@ export const ContactForm = () => {
                         aria-hidden="true"
                         className="h-7 w-6"
                       />{' '}
-                      Ul. Borówkowa 32, Rotmanka k. Pruszcza Gdańskiego
+                    </p>
+                    <p className="flex flex-col space-y-4">
+                      <span className="text-nowrap">
+                        Ul. Krótka 1A, Pruszcz Gdański
+                      </span>
+                      <span className="text-nowrap">
+                        (przystanek autobusowy Pruszcz Gdański, Chopina)
+                      </span>
                     </p>
                   </DrawerTitle>
                   <DrawerDescription></DrawerDescription>
