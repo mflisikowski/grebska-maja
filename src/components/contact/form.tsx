@@ -168,7 +168,7 @@ export const ContactForm = () => {
                   className="bg-white-700 mx-auto my-5 h-[480px] w-[98%]"
                   data-vaul-no-drag
                 >
-                  <Map posix={[54.26946270547405, 18.61158210184981]} />
+                  <Map posix={[54.2640557, 18.6370325]} />
                 </div>
               </DrawerContent>
             </Drawer>
